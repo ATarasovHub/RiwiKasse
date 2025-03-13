@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#product-table th, #product-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn-calculate {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+#btn-calculate:hover {
+    background: #45a049;
+}
+
+#receipt {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
