@@ -10,6 +10,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('btn-calculate')
         .addEventListener('click', calculateTotal);
+
+    const resetBtn = document.getElementById('btn-reset');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', resetForm);
+    }
 });
 
 function renderProducts() {
@@ -51,4 +56,10 @@ function calculateTotal() {
     });
 
     document.getElementById('receipt').textContent = 'Sum: ' + total;
+}
+
+function resetForm() {
+    const inputs = document.querySelectorAll('#product-list input[type="number"]');
+    inputs.forEach(input => input.value = '0');
+    document.getElementById('receipt').textContent = '';
 }
